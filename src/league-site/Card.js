@@ -7,7 +7,6 @@ export class Card extends DOM {
 
         // we assign the card data to the Card object, we also assign the DOM
         this.data = data;
-        this.DOM = DOM
 
         // add the card DOM
         this.DOM = this.addElement(this.DOM, "div");
