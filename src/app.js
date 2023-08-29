@@ -1,5 +1,34 @@
 import "../css/style.scss";
-import {DOMCreator} from "./DOMCreator";
+import {parseJSON} from "./utility/json";
+import {Card} from "./league-site/Card";
+import {CardContainer} from "./league-site/CardContainer";
 
 
-const HTMLDOMCreator = new DOMCreator();
+const json = `
+{
+    "content":[
+        {
+            "name":"Lars", 
+            "champions":[
+                "Taliyah", "Fizz", "Sylas", 
+                "Viktor", "Kennen", 
+                "Kalista", "Yasuo"
+            ]
+        },
+        {
+            "name":"Jonathan", 
+            "champions":[
+                "Sion"
+            ]
+        }
+    ]
+}`;
+
+let data = parseJSON(json);
+if(data == null){
+    alert("json data invalid")
+}
+
+data = data.content;
+
+new CardContainer(data);
