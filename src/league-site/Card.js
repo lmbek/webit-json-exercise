@@ -9,7 +9,7 @@ export class Card extends DOM {
         this.data = data;
 
         // add the card DOM
-        this.DOM = this.addElement(this.DOM, "div");
+        this.DOM = this.addElement(DOM, "div");
     }
 
 }
