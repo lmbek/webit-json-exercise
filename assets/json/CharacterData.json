@@ -1,0 +1,34 @@
+{
+  "content": [
+    {
+      "name": "Sion",
+      "img": "Sion_0.jpg",
+      "text": "The Undead Juggernaut"
+    },
+    {
+      "name": "Gragas",
+      "img": "Gragas_0.png",
+      "text": "The Rabble Rouser"
+    },
+    {
+      "name": "Pyke",
+      "img": "Pyke_0.jpg",
+      "text": "The Bloodharbor Ripper"
+    },
+    {
+      "name": "Taliyah",
+      "img": "Taliyah_0.jpg",
+      "text": "The Stoneweaver"
+    },
+    {
+      "name": "Fizz",
+      "img": "Fizz_0.jpg",
+      "text": "The Tidal Trickster"
+    },
+    {
+      "name": "Sylas",
+      "img": "Sylas_0.jpg",
+      "text": "The Unshackled"
+    }
+  ]
+}
