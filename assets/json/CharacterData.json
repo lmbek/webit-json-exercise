@@ -1,34 +1,44 @@
 {
   "content": [
     {
-      "name": "Sion",
-      "img": "Sion.jpg",
-      "text": "The Undead Juggernaut"
+      "name": "Lars",
+      "champions": [
+        {
+          "name": "Taliyah",
+          "img": "assets/images/Taliyah.jpg",
+          "text": "The Stoneweaver"
+        },
+        {
+          "name": "Fizz",
+          "img": "assets/images/Fizz.jpg",
+          "text": "The Tidal Trickster"
+        },
+        {
+          "name": "Sylas",
+          "img": "assets/images/Sylas.jpg",
+          "text": "The Unshackled"
+        }
+      ]
     },
     {
-      "name": "Gragas",
-      "img": "Gragas.jpg",
-      "text": "The Rabble Rouser"
-    },
-    {
-      "name": "Pyke",
-      "img": "Pyke.jpg",
-      "text": "The Bloodharbor Ripper"
-    },
-    {
-      "name": "Taliyah",
-      "img": "Taliyah.jpg",
-      "text": "The Stoneweaver"
-    },
-    {
-      "name": "Fizz",
-      "img": "Fizz.jpg",
-      "text": "The Tidal Trickster"
-    },
-    {
-      "name": "Sylas",
-      "img": "Sylas.jpg",
-      "text": "The Unshackled"
+      "name": "Jonathan",
+      "champions": [
+        {
+          "name": "Sion",
+          "img": "assets/images/Sion.jpg",
+          "text": "The Undead Juggernaut"
+        },
+        {
+          "name": "Gragas",
+          "img": "assets/images/Gragas.jpg",
+          "text": "The Rabble Rouser"
+        },
+        {
+          "name": "Pyke",
+          "img": "assets/images/Pyke.jpg",
+          "text": "The Bloodharbor Ripper"
+        }
+      ]
     }
   ]
 }
