@@ -4,14 +4,17 @@ import {ChampionCard} from "./ChampionCard";
 export class CardContainer extends DOM {
     cards = []
 
-    constructor(data, DOM) {
+    constructor(data) {
         super();
 
         // add the cardContainer DOM
         this.DOM = this.addElement(this.DOM, "section");
-
+        console.log(data);
+        this.DOM.id = data.name
+        this.DOM.classList.add("cards");
+        
         // add card for each data of cards
-        data.forEach(item => {
+        data.champions.forEach(item => {
             this.cards.push(new ChampionCard(item, this.DOM))
         });
     }

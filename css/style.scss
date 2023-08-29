@@ -1,4 +1,59 @@
 body {
 	margin: 0;
 	background: lightgreen;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&>*{
+		grid-column: 1/3;
+	}
 }
+#header{
+	background-color: rgb(102, 102, 218);
+	height: auto;
+	text-align: center;
+	font-size: 100px;
+	padding: 15px 0px;
+	
+}
+#person-container{
+	display: flex;
+
+	&>div{
+		width: 50%;
+	}
+
+}
+#Lars{
+	grid-column: 1/2;
+}
+#Jonathan{
+	grid-column: 2/3;
+}
+.cards{
+
+	&> div{
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-color: black;
+		display: grid;
+		
+		&> h1{
+			align-self: start;
+
+		}
+		&> p{
+			align-self: end;
+			
+		}
+	}
+}
+
+div{
+	border: solid black 1px;
+	min-height: 50px;
+	min-width: 50px;
+	margin: 10px;
+}
+
