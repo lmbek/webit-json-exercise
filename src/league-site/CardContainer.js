@@ -1,10 +1,10 @@
 import {DOM} from "../utility/DOM";
-import {Card} from "./Card";
+import {ChampionCard} from "./ChampionCard";
 
 export class CardContainer extends DOM {
     cards = []
 
-    constructor(data) {
+    constructor(data, DOM) {
         super();
 
         // add the cardContainer DOM
@@ -12,7 +12,7 @@ export class CardContainer extends DOM {
 
         // add card for each data of cards
         data.forEach(item => {
-            this.cards.push(new Card(item, this.DOM))
+            this.cards.push(new ChampionCard(item, this.DOM))
         });
     }
 }
