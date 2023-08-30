@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	background: lightgreen;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	& > * {
+		grid-column: 1/3;
+	}
+}
+
+#header {
+	background-color: rgb(102, 102, 218);
+	height: auto;
+	text-align: center;
+	font-size: 100px;
+	padding: 15px 0;
+
+}
+
+#person-container {
+	display: flex;
+	min-height: 150px;
+
+	& > div {
+		width: 50%;
+	}
+
+}
+
+#Lars-person {
+	grid-column: 1/2;
+	background-image: url("/assets/images/Season_2019_-_iron_1.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+
+#Jonathan-person {
+	grid-column: 2/3;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-image: url("/assets/images/Season_2019_-_Challenger_1.png");
+
+
+}
+
+#Lars {
+	grid-column: 1/2;
+	margin: 10px 5px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#Jonathan {
+	grid-column: 2/3;
+	margin: 10px 10px 10px 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.cards {
+
+	& > div {
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: grid;
+		aspect-ratio: 1.7/1;
+
+		& > h1 {
+			align-self: start;
+			color: white;
+			text-align: center;
+			font-size: 2.5rem;
+		}
+
+		& > p {
+			align-self: end;
+			color: white;
+			text-align: center;
+			font-size: 2.5rem;
+		}
+	}
+
+
+}
+
+@media (max-width: 800px) {
+	.cards div h1, {
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	.cards div p {
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+	}
+}
