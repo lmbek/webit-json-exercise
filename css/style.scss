@@ -13,11 +13,12 @@ body {
 	height: auto;
 	text-align: center;
 	font-size: 100px;
-	padding: 15px 0px;
+	padding: 15px 0;
 	
 }
 #person-container{
 	display: flex;
+	min-height: 150px;
 
 	&>div{
 		width: 50%;
@@ -26,38 +27,51 @@ body {
 }
 #Lars{
 	grid-column: 1/2;
-
+	margin: 10px 5px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
+
 #Jonathan{
 	grid-column: 2/3;
-	
+	margin: 10px 10px 10px 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
+
 .cards{
 
 	&> div{
 		background-size: 100%;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-color: black;
 		display: grid;
+		aspect-ratio: 1.7/1;
 		
 		&> h1{
 			align-self: start;
-
+			color: white;
+			text-align: center;
+			font-size: 2.5rem;
 		}
 		&> p{
 			align-self: end;
-			
+			color: white;
+			text-align: center;
+			font-size: 2.5rem;
 		}
 	}
 }
 
-div{
-	border: solid black 1px;
-	min-height: 50px;
-	min-width: 50px;
-	margin: 10px;
-}
+@media (max-width: 800px){
+	.cards div h1, {
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+	}
+
 
 #Lars-person{
 	grid-column: 1/2;
@@ -72,4 +86,9 @@ div{
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-image: url("/assets/images/Season_2019_-_Challenger_1.png");
+  .cards div p {
+		color: white;
+		text-align: center;
+		font-size: 1rem;
+	}
 }

@@ -9,7 +9,6 @@ export class CardContainer extends DOM {
 
         // add the cardContainer DOM
         this.DOM = this.addElement(this.DOM, "section");
-        console.log(data);
         this.DOM.id = data.name
         this.DOM.classList.add("cards");
         
