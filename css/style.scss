@@ -72,7 +72,21 @@ body {
 		font-size: 1rem;
 	}
 
-	.cards div p {
+
+#Lars-person{
+	grid-column: 1/2;
+	background-image: url("/assets/images/Season_2019_-_iron_1.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+#Jonathan-person{
+	grid-column: 2/3;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-image: url("/assets/images/Season_2019_-_Challenger_1.png");
+  .cards div p {
 		color: white;
 		text-align: center;
 		font-size: 1rem;
